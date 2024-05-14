@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f33f6c57-6709-47af-90c0-7335530357c8}</ProjectGuid>
-    <RootNamespace>BoostChatServer</RootNamespace>
+    <ProjectGuid>{dfe6dfdf-2ab3-427a-8bfd-f9ab7ad3c23f}</ProjectGuid>
+    <RootNamespace>BoostChatClient</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -129,12 +129,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="boost_chat_server.cpp" />
+    <ClCompile Include="boost_chat_client.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="boost_chat_client.hpp" />
     <ClInclude Include="msg_format.hpp" />
-    <ClInclude Include="boost_chat_server.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

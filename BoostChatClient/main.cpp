@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
-#include "boost_chat_server.hpp"
+#include "boost_chat_client.hpp"
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	boost::asio::io_context ioContext;
 
-	std::cout << "Boost chat server ..." << std::endl;
+	std::cout << "Boost chat client ..." << std::endl;
 
 	if (argc < 2)
 	{
