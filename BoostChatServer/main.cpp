@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-#include <cstring>
 #include "boost_chat_server.hpp"
 
 int main(int argc, char *argv[])
