@@ -47,6 +47,11 @@ public:
         return msg.body;
     }
 
+    void setBody(char* cpLine, size_t len)
+    {
+        std::memcpy(msg.body, cpLine, len);
+    }
+
     std::size_t getBodyLength() const
     {
         return bodyLength;

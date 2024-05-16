@@ -86,8 +86,7 @@ void chatSession::msgWrite()
 {
 	auto self(shared_from_this());
 	boost::asio::async_write(sock,
-		boost::asio::buffer(writeMsgs.front().data().body,
-			writeMsgs.front().length()),
+		boost::asio::buffer(writeMsgs.front().data().body, writeMsgs.front().length()),
 		[this, self](boost::system::error_code ec, std::size_t /*length*/)
 		{
 			if (!ec)
